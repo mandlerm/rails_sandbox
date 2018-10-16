@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  spanish: MyString
+  english: MyString
+  audio: MyString
+  image: MyString
+  category: MyString
+
+two:
+  spanish: MyString
+  english: MyString
+  audio: MyString
+  image: MyString
+  category: MyString
