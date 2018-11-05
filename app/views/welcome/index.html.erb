@@ -1,19 +1,24 @@
 <h1>Spanish Squares</h1>
 
 
-<form method="POST" >
-  <fieldset>
-    <label for='spanish'>Spanish Word</label>
-    <input type='text' id='spanish' name='spanish' />
-    <label for='english'>English Word</label>
-    <input type='text' id='english' name='english' />
-    <label for='category'>Select categories</label>
-    <input type='text' id='category' name='category' />
-    <label for='audio'>Upload audio file</label>
-    <input type='text' id='audio' name='audio' />
-    <label for='image'>Import Image Link</label>
-    <input type='text' id='image' name='image' />
-  </fieldset>
+<%= form_tag do%>
+  <%= label_tag(:spanish, "Spanish Word:") %>
+  <%= text_field_tag(:spanish) %>
+
+  <%= label_tag(:english, "English Word:") %>
+  <%= text_field_tag(:english) %>
+
+  <%= label_tag(:category, "Select a Category:") %>
+  <%= select_tag(:category) %>
+
+  <%= label_tag(:audio, "Upload Audio:") %>
+  <%= text_field_tag(:audio) %>
+
+  <%= label_tag(:image, "Import Image:") %>
+  <%= text_field_tag(:image) %>
+
+  
+
 
 <button>Submit card</button>
-</form>
+<% end %>
