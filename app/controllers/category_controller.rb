@@ -6,8 +6,8 @@ class CategoryController < ApplicationController
   end
 
   def index
-    @categories = Category.find :all
-
+    raise('index')
+    @category = Category.all
   end
 
 end

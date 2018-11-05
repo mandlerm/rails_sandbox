@@ -8,6 +8,8 @@
   <%= label_tag(:english, "English Word:") %>
   <%= text_field_tag(:english) %>
 
+  <%= collection_select(:categories, :index, Category.all, :id, :catName) %>
+
   <%= label_tag(:category, "Select a Category:") %>
   <%= select_tag(:category) %>
 
@@ -17,7 +19,7 @@
   <%= label_tag(:image, "Import Image:") %>
   <%= text_field_tag(:image) %>
 
-  
+
 
 
 <button>Submit card</button>
