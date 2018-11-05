@@ -16,5 +16,5 @@ categories = [
     'types of people']
 
 categories.each do |cat|
-  Category.create(cat)
+  Category.create(catName: cat)
 end
