@@ -1,7 +1,7 @@
 <h1>Spanish Squares</h1>
 
 
-<%= form_tag do%>
+<%= form_tag do %>
   <%= label_tag(:spanish, "Spanish Word:") %>
   <%= text_field_tag(:spanish) %>
 
@@ -11,13 +11,23 @@
   <%= label_tag(:category, "Select a Category:") %>
   <%= collection_select(:categories, :index, Category.all, :id, :catName) %>
 
+  <%= label_tag(:audio, "Upload Audio File:") %>
+  <%= file_field_tag "audio/*"  %>
+
+   <%= label_tag(:image, "Upload image File:") %>
+  <%= file_field_tag "audio/*"  %>
+
+<%# 
+  <input type="file" accept="audio/*" capture>
+
+  <%= label_tag(:image, "Upload image File:"%>
+  <input type="file" accept="image/*" capture>
+
   <%= label_tag(:audio, "Upload Audio:") %>
   <%= text_field_tag(:audio) %>
 
   <%= label_tag(:image, "Import Image:") %>
-  <%= text_field_tag(:image) %>
-
-
+  <%= text_field_tag(:image) %> %>
 
 
 <button>Submit card</button>
