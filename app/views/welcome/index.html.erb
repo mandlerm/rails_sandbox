@@ -8,10 +8,8 @@
   <%= label_tag(:english, "English Word:") %>
   <%= text_field_tag(:english) %>
 
-  <%= collection_select(:categories, :index, Category.all, :id, :catName) %>
-
   <%= label_tag(:category, "Select a Category:") %>
-  <%= select_tag(:category) %>
+  <%= collection_select(:categories, :index, Category.all, :id, :catName) %>
 
   <%= label_tag(:audio, "Upload Audio:") %>
   <%= text_field_tag(:audio) %>

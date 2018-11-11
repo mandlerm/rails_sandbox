@@ -6,7 +6,7 @@ class CategoryController < ApplicationController
   end
 
   def index
-    raise('index')
+
     @category = Category.all
   end
 
